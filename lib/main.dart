@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // ignore: prefer_const_constructors
-      home: sharedPreferences!.getString("id") != null ? ViewNotes() : SignIn(),
+      home:  sharedPreferences!.getString("id") != null ? ViewNotes() : SignIn(),
       routes: {
         "addnotes": (context) => const AddNotes(),
         //"editnotes": (context) => const EditNotes() ,
